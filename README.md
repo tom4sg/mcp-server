@@ -11,14 +11,7 @@
    export OPENAI_API_KEY='your_api_key_here'
    ```
 
-## Usage
-
-### Run the MCP Server
-```bash
-python scripts/server.py
-```
-
-### Test with the Client
-```bash
-python scripts/client-stdio.py
-```
+3. **Test with the Client / Server:**
+   ```bash
+    python scripts/client-stdio.py
+    ```
