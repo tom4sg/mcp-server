@@ -18,7 +18,8 @@ def get_knowledge_base() -> str:
         A formatted string containing all Q&A pairs from the knowledge base.
     """
     try:
-        kb_path = os.path.join(os.path.dirname(__file__), "data", "kb.json")
+        # Go up one directory from scripts/ to reach project root, then into data/
+        kb_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "kb.json")
         with open(kb_path, "r") as f:
             kb_data = json.load(f)
 

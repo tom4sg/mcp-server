@@ -30,7 +30,7 @@ class MCPOpenAIClient:
         self.stdio: Optional[Any] = None
         self.write: Optional[Any] = None
 
-    async def connect_to_server(self, server_script_path: str = "server.py"):
+    async def connect_to_server(self, server_script_path: str = "scripts/server.py"):
         """Connect to an MCP server.
 
         Args:
@@ -149,7 +149,7 @@ async def main():
     """Main entry point for the client."""
     client = MCPOpenAIClient()
     try:
-        await client.connect_to_server("server.py")
+        await client.connect_to_server("scripts/server.py")
 
         # Example: Ask about company vacation policy
         query = "What is our company's vacation policy?"
